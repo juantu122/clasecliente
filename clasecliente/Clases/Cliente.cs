@@ -10,7 +10,7 @@ namespace clasecliente.NewFolder1
     public class Cliente
     {
         private int id;
-        private string cedula;
+        public string cedula;
         private string nombres;
         private string apellidos;
         private string nombres_completos;

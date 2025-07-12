@@ -39,7 +39,38 @@ namespace clasecliente
 
             BaseDatos.BaseDeDatos.ImprimirCliente();
             Console.ReadLine();
-            /*a*/
+            
+
+
+            Console.WriteLine();
+            Console.Write("Ingrese la cedula del cliente a buscar: ");
+            cedula=Console.ReadLine();
+            Cliente objClienteBuscado = BaseDatos.BaseDeDatos.BuscarClientePorCedula(cedula);
+            
+            
+            if(objClienteBuscado != null)
+            {
+                Console.WriteLine("cliente encontrado:");
+                objClienteBuscado.imprimir();
+            }
+            else
+            {
+                Console.WriteLine("Cliente no encontrado: ");
+
+            }
+            Console.Write("Ingrese la ceduladel cliente a buscar: ");
+            cedula = Console.ReadLine();
+            objClienteBuscado = BaseDatos.BaseDeDatos.BuscarClientePorCedula(cedula);
+            
+            if (objClienteBuscado != null)
+            {
+                Console.WriteLine("Cliente encontrado: ");
+                objClienteBuscado.imprimir();
+            }
+            else
+            {
+                Console.WriteLine("Cliente no encontrado.");
+            }
         }
     }
 }
