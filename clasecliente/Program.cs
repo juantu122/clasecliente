@@ -39,6 +39,7 @@ namespace clasecliente
 
             BaseDatos.BaseDeDatos.ImprimirCliente();
             Console.ReadLine();
+            /*a*/
         }
     }
 }
